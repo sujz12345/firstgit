@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8"/>
+<title>new title</title>
+</HEAD>
+<BODY>
+<nav title="测试AlphaAnimation"/>
+<input type="button" value="AlphaAnimation展现15秒" onClick="test1"/>
+<input type="button" value="AlphaAnimation重复展现REVERSE" onClick="test2"/>
+<input type="button" value="AlphaAnimation重复展现RESTART" onClick="test3"/>
+</BODY>
+<SCRIPT>
+function test1(){
+	$M.page.goTo("/test1.html", {}, false);
+}
+
+function test2() {
+	$M.page.goTo({url: "/test2.html", isDistroySelf: false});
+}
+
+function test3() {
+	$M.page.goTo({url: "/test3.html", isDistroySelf: false});
+}
+</SCRIPT>
+</HTML>

@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8"/>
+<title>Hello World</title>
+</HEAD>
+<BODY>
+<nav title="动画展现15s"/>
+<div  id="div" width="100" height="100" backgroundColor="#ff00ff" onClick='start'>
+</div>
+
+</BODY>
+<SCRIPT>
+function start(){
+	var alphaAnimation = new $M.AlphaAnimation({
+			fromAlpha : 0,
+			toAlpha : 1.0,
+			duration : 15000
+		});
+		div.addAnimation(alphaAnimation);
+		div.startAnimation();
+}
+
+</SCRIPT>
+</HTML>
